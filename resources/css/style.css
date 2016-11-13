@@ -150,4 +150,23 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #E37E30;
 }
-
+/* ------------------------------------------
+ * Meals
+ ------------------------------------------*/
+.menu {
+    list-style: none;
+    width: 100%;
+}
+.menu li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.photo {
+    width: 100%;
+    margin: 0;
+}
+.photo img {
+    width:100%;
+    height: auto;
+}
