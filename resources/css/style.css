@@ -61,6 +61,9 @@ h3 {
     width: 70%;
     margin-left: 15%;
 }
+.features .long-form {
+    margin-bottom: 30px;
+}
 .box p {
     font-size: 90%;
     line-height: 145%;
@@ -96,7 +99,7 @@ h3 {
     transition: background-color .5s, color .5s;
 }
 
-/* Paragraphs */
+/* Icons */
 
 .big-icon {
     font-size: 350%;
@@ -153,6 +156,9 @@ header {
 /* ------------------------------------------
  * Meals
  ------------------------------------------*/
+.meals {
+    padding: 0;
+}
 .menu {
     list-style: none;
     width: 100%;
@@ -165,8 +171,17 @@ header {
 .photo {
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: black;
 }
 .photo img {
+    opacity: .7;
     width:100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
+}
+.photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
 }
