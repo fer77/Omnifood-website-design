@@ -20,13 +20,11 @@ section {
 a:link {
     text-decoration: none;
     color: #555;
-    padding-bottom: 1px;
-    border-bottom: 1px solid transparent;
-}
+   }
 a:hover {
     color: #E37E30;
     border-bottom: 1px solid #E37E30;
-    transition: border-bottom .25s, color .25s;
+    transition: border-bottom .2s, color .2s;
 }
 .clearfix {
     zoom: 1;
@@ -145,6 +143,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 .hero-text-box {
@@ -273,4 +272,38 @@ header {
 .host-city {
     margin-bottom: 5px;
 }
-
+/* ------------------------------------------
+ * Testimonials
+ ------------------------------------------*/
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/back-customers.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+blockquote {
+    padding: 2%;
+    margin-top: 40px;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+blockquote:before {
+    content: '\201c';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
