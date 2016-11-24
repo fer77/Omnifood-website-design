@@ -1,0 +1,32 @@
+/* Small Phones 0-480px */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Medium Phones and Tablets from 481px-767px  */
+@media only screen and (max-width: 767px) {
+
+}
+/* Large Devices from 481px-767px  */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .long-form {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/* Larger Devices to Desktops from 767px - up  */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+         width: 100%;
+         padding: 0 2%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+}
