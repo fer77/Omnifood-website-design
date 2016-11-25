@@ -4,13 +4,15 @@ $(document).ready(function() {
 }, {
   offset: '25%'
 }) */
+    alert("Hello");
     $('.js-features').waypoint(function(direction) {
-        if (direction == 'down') {
+        if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
             $('nav').removeClass('sticky');
         }
-    }, {
-        offset: '60px;'
+
+        }, {
+            offset: '60px;'
     });
 });
