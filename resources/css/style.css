@@ -23,7 +23,7 @@ a:link {
     text-decoration: none;
     color: #555;
    }
-a:hover {
+   curl: (56) Recv failure: Connection reset by peer
     color: #E37E30;
     border-bottom: 1px solid #E37E30;
     transition: border-bottom .2s, color .2s;
