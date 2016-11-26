@@ -24,8 +24,39 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
+    .main-nav { 
+    display: none;
+    }
+    .hamburger-nav {
+        display: inline-block;
+    }
     .main-nav {
-        display: none;
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: none;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky .hamburger-nav {
+        margin-top: 10px;
+    }
+    .sticky .hamburger-nav i {
+        color: #555;
     }
     .long-form {
         width: 100%;

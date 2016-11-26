@@ -245,7 +245,17 @@ header {
 .sticky .main-nav {
     margin-top: 15px;
 }
-
+/* Mobile Nav */
+.hamburger-nav {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger-nav i {
+    font-size: 200%;
+    color: white;
+}
 
 /* ------------------------------------------
  * Meals

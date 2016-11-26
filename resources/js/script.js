@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    /* Sticky Nav */
-    /* var waypoints = $('#handler-first').waypoint(function(direction) {
+/* Sticky Nav */
+/* var waypoints = $('#handler-first').waypoint(function(direction) {
   notify(this.element.id + ' hit 25% from top of window')
 }, {
   offset: '25%'
@@ -14,7 +14,7 @@ $(document).ready(function() {
     }, {
         offset: '60px;'
     });
-    /* Scroll on Buttons */
+/* Scroll on Buttons */
     $('.js-scroll-plans').click(function() {
         $('html, body').animate({ scrollTop: $('.js-plans').offset().top }, 2000);
     });
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.js-scroll-features').click(function() {
         $('html, body').animate({ scrollTop: $('.js-features').offset().top }, 1000);
     });
-    /* Nav Scroll */
+/* Nav Scroll */
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -35,7 +35,7 @@ $(document).ready(function() {
             }
         });
     });
-    /* On Scroll Animation */
+/* On Scroll Animation */
     $('.js-wp-1').waypoint(function(direction) {
         $('.js-wp-1').addClass('animated fadeIn');
     }, {
@@ -56,5 +56,17 @@ $(document).ready(function() {
     }, {
         offset: '50%;'
     });
+/* Mobile Nav */
+    $('.js-hamburger-nav').click(function() {
+        var nav = $('.js-main-nav');
+        var icon = $('.js-hamburger-nav i');
 
+        nav.slideToggle(250);
+
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round').removeClass('ion-navicon-round');
+        } else {
+             icon.addClass('ion-navicon-round').removeClass('ion-close-round');
+        }
+    });
 });
