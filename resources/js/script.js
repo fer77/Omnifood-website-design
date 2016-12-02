@@ -7,9 +7,12 @@ $(document).ready(function() {
 }) */
     $('.js-features').waypoint(function(direction) {
         if (direction == 'down') {
-            $('nav').addClass('sticky');
+            $('nav').addClass('sticky animated slideInDown');
         } else {
-            $('nav').removeClass('sticky');
+            $('nav').addClass('slideOutUp')
+            setTimeout(function () {
+                $('nav').removeClass('sticky animated slideInDown slideOutUp');
+            }, 500);
         }
     }, {
         offset: '60px;'
@@ -22,7 +25,7 @@ $(document).ready(function() {
     $('.js-scroll-features').click(function() {
         $('html, body').animate({ scrollTop: $('.js-features').offset().top }, 1000);
     });
-/* Nav Scroll */
+/* Nav Scroll (got this off of CSS tricks) */
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
