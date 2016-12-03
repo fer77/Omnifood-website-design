@@ -25,7 +25,7 @@
         margin: 0 0 4% 0;
     }
     .main-nav { 
-    display: none;
+        display: none;
     }
     .hamburger-nav {
         display: inline-block;
@@ -87,7 +87,23 @@
     .app-screen {
         width: 40px;
     }
-
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+    .form-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
 }
 /* Large Devices from 481px-767px  */
 @media only screen and (max-width: 1023px) {
@@ -131,14 +147,14 @@
         font-size: 250%;
     }
     .contact-form {
-        width: 80%;
+        width: 90%;
     }
 }
 /* Larger Devices to Desktops from 767px - up  */
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
-         width: 100%;
-         padding: 0 2%;
+        width: 100%;
+        padding: 0 2%;
     }
     .row {
         padding: 0 2%;

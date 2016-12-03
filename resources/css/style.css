@@ -22,7 +22,7 @@ section {
 a:link {
     text-decoration: none;
     color: #555;
-   }
+}
 a:active {
     color: #E37E30;
     border-bottom: 1px solid #E37E30;
@@ -109,6 +109,27 @@ textarea {
 .box p {
     font-size: 90%;
     line-height: 145%;
+}
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+.map {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    z-index: 0;
+}
+.form-box {
+    width: 50%;
+    height: 560px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
 }
 
 /* ------------------------------------------
@@ -428,7 +449,7 @@ cite img {
  * Contact form
  ------------------------------------------*/
 .form {
-    width: 60%
+    width: 90%
     margin: 0 auto;
 }
 /* ------------------------------------------
