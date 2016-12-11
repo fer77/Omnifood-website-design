@@ -415,6 +415,7 @@
                 <div class="row">
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class="row">
+                            <?php include 'mailer.php'; ?>
                             <?php
                                 if($_GET['success'] == 1) {
                                     echo "
