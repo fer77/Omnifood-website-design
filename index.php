@@ -416,12 +416,20 @@
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class="row">
                             <?php
-                            <div class="form-messages success">
-                                Thank you! Your message has been sent.
-                            </div>
-                             <div class="form-messages error">
-                                Oops! Please try to submit again.
-                            </div>
+                                if($_GET['SUCCESS'] == 1) {
+                                    echo "
+                                    <div class=\"form-messages success\">
+                                        Thank you! Your message has been sent.
+                                    </div>
+                                        ";
+                                }
+                                if($_GET['SUCCESS'] == 1) {
+                                    echo "
+                                    <div class=\"form-messages error\">
+                                        Oops! Please, submit your message again.
+                                    </div>
+                                        ";
+                                }
                             ?>
                         </div>
                         <div class="row">
