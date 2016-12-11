@@ -32,4 +32,6 @@
     // Redirect to the index.html page with success code
     header("Location: http://www.webdesigncourse.co/omnifood/index.php?success=1#form");
 
+    require "index.php";
+
 ?>
