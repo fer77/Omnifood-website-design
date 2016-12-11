@@ -408,12 +408,22 @@
 
         <div class="map-box">
             <div class="map"></div>
-            <div class="form-box">
+            <div class="form-box" id="form">
                 <div class="row">
                     <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
                 </div>
                 <div class="row">
                     <form method="post" action="mailer.php" class="contact-form">
+                        <div class="row">
+                            <?php
+                            <div class="form-messages success">
+                                Thank you! Your message has been sent.
+                            </div>
+                             <div class="form-messages error">
+                                Oops! Please try to submit again.
+                            </div>
+                            ?>
+                        </div>
                         <div class="row">
                             <div class="col span-1-of-3">
                                 <label for="name">name</label>
