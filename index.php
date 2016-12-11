@@ -423,7 +423,7 @@
                                     </div>
                                         ";
                                 }
-                                if($_GET['SUCCESS'] == 1) {
+                                if($_GET['SUCCESS'] == -1) {
                                     echo "
                                     <div class=\"form-messages error\">
                                         Oops! Please, submit your message again.
