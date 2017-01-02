@@ -413,14 +413,14 @@
                     <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
                 </div>
                 <div class="row">
-                    <form method="post" action="mailer.php" class="contact-form">
+                    <form method="POST" action="mailer.php" class="contact-form">
                         <div class="row">
                             <?php
                                 if($_GET['success'] == 1) {
                                     echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
                                 }
                                 if($_GET['success'] == -1) {
-                                    echo "<div class=\"form-messages error\">Oops! Please, submit your message again.</div>";
+                                     echo "<div class=\"form-messages error\"> Oops! Please try to submit again.</div>";
                                 }
                             ?>
                         </div>
@@ -523,5 +523,36 @@
         <!-- Script.js -->
         <script src="/resources/js/script.js"></script>
 
-    </body>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
 </html>
