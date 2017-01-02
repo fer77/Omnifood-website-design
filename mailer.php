@@ -1,5 +1,5 @@
 <?php
-
+//var_dump($_REQUEST);
     // Get the form fields, removes html tags and whitespace.
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
